@@ -26,3 +26,5 @@ RUN rm -r /root/.m2/
 RUN rm -r /root/.berkshelf/
 RUN rm -r /opt/chefdk/
 RUN yum clean all
+
+ENTRYPOINT supervisord -n -c /etc/supervisord.conf
