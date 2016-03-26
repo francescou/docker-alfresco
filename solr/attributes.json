@@ -1,0 +1,23 @@
+{
+  "name": "docker-solr",
+  "alfresco": {
+    "public_hostname": "alfrescopub",
+    "internal_hostname": "alfrescoint",
+    "skip_certificate_creation": true,
+    "log.json.enabled": false,
+    "install_fonts": false,
+    "components": [
+      "tomcat",
+      "solr"
+    ],
+    "restart_services": [],
+    "ssl_enabled": false,
+    "solrproperties": {
+      "alfresco.host": "my.repo.host.com",
+      "alfresco.port": "8088"
+    }
+  },
+  "run_list": [
+    "alfresco::default"
+  ]
+}
