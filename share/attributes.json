@@ -1,0 +1,17 @@
+{
+  "name": "docker-share",
+  "alfresco": {
+    "skip_certificate_creation": true,
+    "log.json.enabled": false,
+    "install_fonts": false,
+    "components": [
+      "tomcat",
+      "share"
+    ],
+    "restart_services": [],
+    "ssl_enabled": false
+  },
+  "run_list": [
+    "alfresco::default"
+  ]
+}
